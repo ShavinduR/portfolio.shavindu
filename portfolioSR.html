@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shavindu Rashmika | Graphic Designer & Photographer</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: { heading: ['"Playfair Display"', 'serif'], body: ['Inter', 'sans-serif'] },
+          colors: { primary: '#1E40AF', accent: '#F59E0B' }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-gray-100 font-body">
+
+  <!-- Dark Mode Toggle -->
+  <button id="theme-toggle" class="fixed bottom-5 right-5 z-50 bg-white dark:bg-gray-800 p-2.5 rounded-full shadow-2xl border text-primary text-lg hover:scale-110 transition">
+    <i class="fas fa-moon"></i>
+  </button>
+
+  <!-- Navigation -->
+  <nav class="fixed top-0 w-full bg-white/95 dark:bg-gray-900/95 backdrop-blur-md shadow-lg z-40">
+    <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
+      <h1 class="text-3xl font-bold text-primary">portfolio<span class="text-accent">.</span>shavindu</h1>
+      <div class="hidden md:flex space-x-10 text-lg">
+        <a href="#home" class="hover:text-accent transition">Home</a>
+        <a href="#about" class="hover:text-accent transition">About</a>
+        <a href="#skills" class="hover:text-accent transition">Skills</a>
+        <a href="#projects" class="hover:text-accent transition">Work</a>
+        <a href="#photography" class="hover:text-accent transition">Photography</a>
+        <a href="#contact" class="hover:text-accent transition">Contact</a>
+      </div>
+      <button id="mobile-menu-btn" class="md:hidden text-2xl"><i class="fas fa-bars"></i></button>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden bg-white dark:bg-gray-900 shadow-xl">
+      <a href="#home" class="block py-4 px-8 hover:bg-gray-100 dark:hover:bg-gray-800">Home</a>
+      <a href="#about" class="block py-4 px-8 hover:bg-gray-100 dark:hover:bg-gray-800">About</a>
+      <a href="#skills" class="block py-4 px-8 hover:bg-gray-100 dark:hover:bg-gray-800">Skills</a>
+      <a href="#projects" class="block py-4 px-8 hover:bg-gray-100 dark:hover:bg-gray-800">Work</a>
+      <a href="#photography" class="block py-4 px-8 hover:bg-gray-100 dark:hover:bg-gray-800">Photography</a>
+      <a href="#contact" class="block py-4 px-8 hover:bg-gray-100 dark:hover:bg-gray-800">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Hero (unchanged) -->
+  <section id="home" class="min-h-screen flex items-center bg-gradient-to-br from-primary to-blue-900 text-white pt-20">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+      <div class="text-center md:text-left">
+        <h2 class="text-6xl md:text-8xl font-heading font-bold leading-tight">SHAVINDU<br><span class="text-accent">RASHMIKA</span></h2>
+        <p class="text-2xl mt-6">•Graphic Designer <br>• Brand Strategist <br>• Wildlife & Nature Photographer</p>
+        <p class="text-lg mt-6 max-w-xl">Specializing in logos, branding, social media design & infographics.</p>
+        <div class="mt-10 flex flex-wrap gap-5 justify-center md:justify-start">
+          <a href="#projects" class="bg-accent text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-amber-600 transition shadow-xl">View Work</a>
+          <a href="F:\myPortfolio\pdfs\MYCV.pdf" download class="border-2 border-white px-8 py-4 rounded-full font-bold hover:bg-white hover:text-primary transition">Download CV</a>
+        </div>
+      </div>
+      <div class="flex justify-center">
+        <img src="F:\myPortfolio\.dist\Me.png" alt="Shavindu Rashmika" class="w-full max-w-xl rounded-3xl shadow-2xl"/>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-20 bg-white dark:bg-gray-900">
+    <div class="max-w-5xl mx-auto px-6 text-center">
+      <h2 class="text-5xl font-heading text-primary mb-10">About Me</h2>
+      <p class="text-lg leading-relaxed text-gray-700 dark:text-gray-300">
+        I'm <strong>Shavindu Rashmika,</strong> a passionate graphic designer with over 2 years of experience creating visual solutions for brands across various industries. 
+        My approach blends strategic thinking with artistic flair to deliver designs that <strong>not only look beautiful but also achieve business objectives.</strong>
+        <br>Specialize in social media post design, brand identity, packaging design, and digital illustration.
+        <br><br>Beyond design, I'm an avid wildlife photographer, capturing the raw beauty of nature through my lens.
+        <br><br>Let's collaborate to <strong>bring your vision to life with creativity</strong> and impact!
+      </p>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="py-20 bg-gray-100 dark:bg-gray-800">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-5xl font-heading text-center text-primary mb-16">Skills & Tools</h2>
+      <div class="grid md:grid-cols-2 gap-12">
+        <div class="bg-white dark:bg-gray-900 p-10 rounded-3xl shadow-2xl">
+          <h3 class="text-3xl font-bold text-primary mb-8">Design Expertise</h3>
+          <ul class="space-y-4 text-lg">
+            <li>• Graphic Design (Digital & Print)</li>
+            <li>• Video Editing & Motion Graphics</li>
+            <li>• Visual Branding & Creative Concept Development</li>
+            <li>• Social Media Content Strategy & Management</li>
+            <li>• Digital Illustration & Color Theory</li>
+            <li>• Photography & Photo Retouching</li>
+            <li>• Layout & Composition</li>
+          </ul>
+        </div>
+
+<!-- 10 Tools with Real Icons -->
+        <div class="bg-white dark:bg-gray-900 p-10 rounded-3xl shadow-2xl">
+          <h3 class="text-3xl font-bold text-primary mb-10 text-center">Tools I Master</h3>
+          <div class="grid grid-cols-5 gap-8">
+            <div class="text-center"><img src="F:\myPortfolio\tools\photoshop.png" alt="Photoshop" class="w-16 mx-auto"/><p class="mt-3 text-sm">Photoshop</p></div>
+            <div class="text-center"><img src="F:\myPortfolio\tools\Illustrator.png" alt="Illustrator" class="w-16 mx-auto"/><p class="mt-3 text-sm">Illustrator</p></div>
+            <div class="text-center"><img src="F:\myPortfolio\tools\premierePro.png" alt="Premiere Pro" class="w-16 mx-auto"/><p class="mt-3 text-sm">Premiere Pro</p></div>
+            <div class="text-center"><img src="F:\myPortfolio\tools\afterEffects.png" alt="After Effects" class="w-16 mx-auto"/><p class="mt-3 text-sm">After Effects</p></div>
+            <div class="text-center"><img src="F:\myPortfolio\tools\Canva.png" alt="Canva" class="w-16 mx-auto"/><p class="mt-3 text-sm">Canva</p></div>
+            <div class="text-center"><img src="F:\myPortfolio\tools\Figma.png" alt="Figma" class="w-16 mx-auto"/><p class="mt-3 text-sm">Figma</p></div>
+            <div class="text-center"><img src="F:\myPortfolio\tools\maya.png" alt="Maya" class="w-16 mx-auto"/><p class="mt-3 text-sm">3D Maya</p></div>
+            <div class="text-center"><img src="F:\myPortfolio\tools\Blender.png" alt="Blender" class="w-16 mx-auto"/><p class="mt-3 text-sm">Blender</p></div>
+            <div class="text-center"><img src="F:\myPortfolio\tools\proTools.png" alt="InDesign" class="w-16 mx-auto"/><p class="mt-3 text-sm">Pro Tools</p></div>
+            <div class="text-center"><img src="F:\myPortfolio\tools\flStudio.png" alt="FL Studio" class="w-16 mx-auto"/><p class="mt-3 text-sm">FL Studio</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Work - Now with Descriptions + Clickable to PDFs -->
+  <section id="projects" class="py-20 bg-white dark:bg-gray-900">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-5xl font-heading text-center text-primary mb-16">Featured Work</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+
+        <!-- Logo Design -->
+        <a href="F:\myPortfolio\pdfs\Logo.pdf" target="_blank" class="group block">
+          <div class="relative overflow-hidden rounded-3xl shadow-2xl hover:shadow-3xl transition">
+            <img src="F:\myPortfolio\work\Logo.png" alt="Logo Design" class="w-full h-96 object-cover group-hover:scale-110 transition duration-500"/>
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+            <div class="absolute bottom-0 p-8 text-white">
+              <h3 class="text-2xl font-bold">Logo Design</h3>
+              <p class="mt-2 text-sm opacity-90">Modern, minimal & memorable logos that define brands.</p>
+            </div>
+          </div>
+        </a>
+
+        <!-- Brand Identity -->
+        <a href="F:\myPortfolio\pdfs\Brand.pdf" target="_blank" class="group block">
+          <div class="relative overflow-hidden rounded-3xl shadow-2xl hover:shadow-3xl transition">
+            <img src="F:\myPortfolio\work\branding 2.jpg" alt="Brand Identity" class="w-full h-96 object-cover group-hover:scale-110 transition"/>
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+            <div class="absolute bottom-0 p-8 text-white">
+              <h3 class="text-2xl font-bold">Brand Identity</h3>
+              <p class="mt-2 text-sm opacity-90">Full visual systems: logo, colors, fonts & guidelines.</p>
+            </div>
+          </div>
+        </a>
+
+        <!-- Social Media Design -->
+        <a href="F:\myPortfolio\pdfs\Social.pdf" target="_blank" class="group block">
+          <div class="relative overflow-hidden rounded-3xl shadow-2xl hover:shadow-3xl transition">
+            <img src="F:\myPortfolio\work\social.jpg" alt="Social Media" class="w-full h-96 object-cover group-hover:scale-110 transition"/>
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+            <div class="absolute bottom-0 p-8 text-white">
+              <h3 class="text-2xl font-bold">Social Media Design</h3>
+              <p class="mt-2 text-sm opacity-90">Engaging posts, stories & campaigns that grow reach.</p>
+            </div>
+          </div>
+        </a>
+
+        <!-- Infographics -->
+        <a href="F:\myPortfolio\pdfs\Infographic.pdf" target="_blank" class="group block">
+          <div class="relative overflow-hidden rounded-3xl shadow-2xl hover:shadow-3xl transition">
+            <img src="F:\myPortfolio\work\infographic.jpg" alt="Infographics" class="w-full h-96 object-cover group-hover:scale-110 transition"/>
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+            <div class="absolute bottom-0 p-8 text-white">
+              <h3 class="text-2xl font-bold">Infographics</h3>
+              <p class="mt-2 text-sm opacity-90">Beautiful data visualization that tells a story.</p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Wildlife & Nature Photography - 8 Photos in 2 Rows -->
+  <section id="photography" class="py-20 bg-gray-100 dark:bg-gray-800">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+      <h2 class="text-5xl font-heading text-primary mb-12">Wildlife & Nature Photography</h2>
+      
+      <!-- Row 1 -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mb-8">
+        <img src="F:\myPortfolio\Wildlife & Nature Photography\Squirrel 3.jpg" class="w-full h-64 object-cover rounded-2xl shadow-2xl hover:scale-105 transition">
+        <img src="F:\myPortfolio\Wildlife & Nature Photography\Deer.jpg" class="w-full h-64 object-cover rounded-2xl shadow-2xl hover:scale-105 transition">
+        <img src="F:\myPortfolio\Wildlife & Nature Photography\Elephant udawalawa.jpg" class="w-full h-64 object-cover rounded-2xl shadow-2xl hover:scale-105 transition">
+        <img src="F:\myPortfolio\Wildlife & Nature Photography\Peacock 1.jpg" class="w-full h-64 object-cover rounded-2xl shadow-2xl hover:scale-105 transition">
+      </div>
+
+      <!-- Row 2 -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+        <img src="F:\myPortfolio\Wildlife & Nature Photography\Balangoda.jpg" class="w-full h-64 object-cover rounded-2xl shadow-2xl hover:scale-105 transition">
+        <img src="F:\myPortfolio\Wildlife & Nature Photography\Ella .jpg" class="w-full h-64 object-cover rounded-2xl shadow-2xl hover:scale-105 transition">
+        <img src="F:\myPortfolio\Wildlife & Nature Photography\Kalawana 2.jpg" class="w-full h-64 object-cover rounded-2xl shadow-2xl hover:scale-105 transition">
+        <img src="F:\myPortfolio\Wildlife & Nature Photography\King coconut.jpg" class="w-full h-64 object-cover rounded-2xl shadow-2xl hover:scale-105 transition">
+      </div>
+
+      <!-- See More Button → Opens Wildlife PDF -->
+      <div class="mt-12">
+        <a href="Wildlife.pdf" target="_blank" class="inline-block bg-primary hover:bg-blue-800 text-white px-12 py-4 rounded-full font-bold text-lg shadow-xl hover:shadow-2xl transition transform hover:-translate-y-1">
+          See More Photos (PDF)
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT – Stunning & Professional Footer (Replace this entire section -->
+<section id="contact" class="py-32 bg-gradient-to-b from-gray-50 to-white dark:from-gray-900 dark:to-gray-800">
+  <div class="max-w-6xl mx-auto px-6">
+    <!-- Get In Touch Heading -->
+    <div class="text-center mb-16">
+      <h2 class="text-5xl md:text-6xl font-heading text-primary mb-6">Get In Touch</h2>
+      <p class="text-xl text-gray-600 dark:text-gray-400">I'm available for freelance projects, collaborations, or just say hello!</p>
+    </div>
+
+    <!-- Contact Form (kept beautiful as before) -->
+    <form id="contact-form" class="max-w-3xl mx-auto bg-white dark:bg-gray-800 p-10 rounded-3xl shadow-2xl mb-20">
+      <div class="grid md:grid-cols-2 gap-8 mb-8">
+        <input type="text" name="name" required placeholder="Your Name" class="px-6 py-4 border border-gray-300 dark:border-gray-600 rounded-xl focus:ring-4 focus:ring-accent/30 focus:border-accent outline-none">
+        <input type="email" name="email" required placeholder="your@email.com" class="px-6 py-4 border border-gray-300 dark:border-gray-600 rounded-xl focus:ring-4 focus:ring-accent/30 focus:border-accent outline-none">
+      </div>
+      <input type="text" name="subject" required placeholder="Subject" class="w-full px-6 py-4 border border-gray-300 dark:border-gray-600 rounded-xl mb-8 focus:ring-4 focus:ring-accent/30">
+      <textarea name="message" rows="6" required placeholder="Your message..." class="w-full px-6 py-4 border border-gray-300 dark:border-gray-600 rounded-xl mb-10 focus:ring-4 focus:ring-accent/30 resize-none"></textarea>
+      <button type="submit" class="w-full bg-accent hover:bg-amber-600 text-white font-bold text-xl py-5 rounded-2xl shadow-xl hover:shadow-2xl transition transform hover:-translate-y-1">
+        Send Message
+      </button>
+    </form>
+
+    <!-- Highlighted Contact Card – Matches Your CV Style Exactly -->
+    <div class="max-w-5xl mx-auto bg-gradient-to-r from-primary to-blue-900 text-white rounded-3xl shadow-2xl overflow-hidden">
+      <div class="p-12 md:p-16 text-center md:text-left">
+        <h3 class="text-4xl md:text-5xl font-heading mb-10">Let's Work Together</h3>
+        
+        <div class="grid md:grid-cols-2 gap-8 mb-12">
+          <div>
+            <p class="text-amber-300 text-sm uppercase tracking-wider mb-2">Phone</p>
+            <p class="text-2xl md:text-2xl font-bold">074 232 7807</p>
+          </div>
+          <div>
+            <p class="text-amber-300 text-sm uppercase tracking-wider mb-2">Email</p>
+            <a href="mailto:shavindu.rashmika928@gmail.com" class="text-2xl md:text-2xl font-bold hover:text-amber-300 transition">
+              shavindu.rashmika928@gmail.com
+            </a>
+          </div>
+        </div>
+
+        <!-- Social Links – Now Includes Facebook -->
+        <div class="flex justify-center md:justify-start gap-10 text-5xl">
+          <a href="https://wa.me/94711098429" target="_blank" class="hover:text-amber-300 transition transform hover:scale-110">
+            <i class="fab fa-whatsapp"></i>
+          </a>
+          <a href="https://facebook.com/yourprofile" target="_blank" class="hover:text-amber-300 transition transform hover:scale-110">
+            <i class="fab fa-facebook"></i>
+          </a>
+          <a href="https://instagram.com" target="_blank" class="hover:text-amber-300 transition transform hover:scale-110">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/shavindu-rashmika-rathnayak/" target="_blank" class="hover:text-amber-300 transition transform hover:scale-110">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+        </div>
+
+        <div class="mt-12 pt-10 border-t border-white/20 text-center text-sm opacity-80">
+          <p>© 2025 Shavindu Rashmika. All rights reserved. Crafted with passion in Sri Lanka</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Scripts (Dark Mode + Mobile Menu + EmailJS) -->
+  <script>
+    // Dark Mode
+    document.getElementById('theme-toggle').addEventListener('click', () => {
+      document.documentElement.classList.toggle('dark');
+      const icon = document.querySelector('#theme-toggle i');
+      icon.classList.toggle('fa-moon');
+      icon.classList.toggle('fa-sun');
+    });
+
+    // Mobile Menu
+    document.getElementById('mobile-menu-btn').addEventListener('click', () => {
+      document.getElementById('mobile-menu').classList.toggle('hidden');
+      const icon = document.querySelector('#mobile-menu-btn i');
+      icon.classList.toggle('fa-bars');
+      icon.classList.toggle('fa-times');
+    });
+  </script>
+</body>
+</html>
